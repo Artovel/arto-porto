@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umbu Artovel | Portofolio</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      * {
+        scroll-behavior: smooth;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(11, 127, 199);
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f4fef7;
+        color: #2e7d32;
+      }
+
+      .navbar {
+        background-color: #4caf50;
+      }
+
+      .navbar-brand,
+      .nav-link {
+        color: #fff !important;
+        font-weight: 600;
+      }
+
+      .nav-link:hover {
+        text-decoration: underline;
+      }
+
+      /* header {
+        background: linear-gradient(135deg, #d0f4de, #a9def9);
+        padding: 100px 0;
+        text-align: center; */
+      /* }
+
+      header h1 {
+        font-weight: 700;
+        color: #1e3a5f;
+      } */
+
+      header p {
+        font-size: 1.1rem;
+        color: #333;
+      }
+
+      .btn-utama {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 30px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background 0.3s;
+      }
+      header {
+        background: linear-gradient(135deg, #d0f4de, #a9def9);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        text-align: center;
+      }
+      .btn-utama:hover {
+        background-color: #388e3c;
+      }
+
+      section {
+        padding: 80px 0;
+      }
+
+      .section-bg {
+        background-color: #e6f5eb;
+      }
+
+      .about-section img {
+        width: 100%;
+        max-width: 350px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .sertifikat-img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+      .info-card h5 {
+        margin-bottom: 10px;
+        color: #388e3c;
+      }
+
+      .info-card ul {
+        padding-left: 1.2rem;
+        color: #555;
+      }
+
+      .card {
+        border: none;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      #galeri {
+        background: linear-gradient(to right, #f0fbf7, #e0f7ff);
+        padding: 80px 0;
+      }
+
+      #galeri .row {
+        justify-content: center;
+      }
+
+      #galeri img {
+        border-radius: 12px;
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
+
+      #galeri img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      footer {
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 50px;
+      }
+
+      footer {
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 50px;
+      }
+      .card-img-top.pengalaman-img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  background-color: #f5f5f5; /* opsional agar latar belakang tidak putih polos */
+  padding: 10px;
+}
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Artovel Ludu</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link" href="#beranda">Beranda</a>
+            <a class="nav-link" href="#tentang">Tentang</a>
+            <a class="nav-link" href="#proyek">Proyek</a>
+            <a class="nav-link" href="#artikel">Artikel</a>
+            <a class="nav-link" href="#sertifikat">Sertifikat</a>
+            <a class="nav-link" href="#kontak">Kontak</a>
+            <a class="nav-link" href="#galeri">Galeri</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="beranda">
+      <div class="container">
+        <h1 data-aos="fade-down">Halo, Saya Artovel Ludu</h1>
+        <p data-aos="fade-up">Web Developer & Mahasiswa Informatika</p>
+        <a
+          href="#tentang"
+          class="btn-utama mt-3 d-inline-block"
+          data-aos="zoom-in"
+          >Lihat Selengkapnya</a
+        >
+      </div>
+    </header>
+
+    <!-- Ten<! Tentang Saya -->
+<section id="tentang" class="about-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-5 mb-4" data-aos="zoom-in">
+        <img
+          src="WhatsApp Image 2025-06-17 at 23.53.10.jpeg"
+          alt="Foto Profil Umbu Artovel"
+        />
+      </div>
+      <div class="col-md-7" data-aos="fade-left">
+        <div class="info-card">
+          <h5>Tentang Saya</h5>
+          <p>
+            Saya adalah mahasiswa Teknik Informatika di Universitas Kristen Wira Wacana Sumba. Saya memiliki semangat tinggi dalam bidang teknologi, khususnya pengembangan web.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h5>Data Pribadi</h5>
+          <ul>
+            <li>Nama: Umbu Artovel Yunior Titu Ludu</li>
+            <li>Tempat/Tanggal Lahir: Kandara, 06 Juni 2005</li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h5>Pendidikan</h5>
+          <ul>
+            <li>2023–Sekarang: Teknik Informatika, Unkriswina</li>
+            <li>2020–2023: SMA PGRI</li>
+            <li>2017–2020: SMP Kristen</li>
+            <li>2011–2017: SD Palindingmburung</li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h5>Hobi</h5>
+          <ul>
+            <li>Futsal</li>
+            <li>Sepak Bola</li>
+            <li>Bermain Catur</li>
+            <li>Bermain Game Online</li>
+            <li>Berenang</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+   <!-- Pengalaman & Prestasi -->
+<section id="proyek" class="section-bg">
+  <div class="container" data-aos="fade-up">
+    <h2 class="text-center mb-4">Pengalaman & Prestasi</h2>
+    <div class="row g-4">
+
+      <!-- Kartu Prestasi 1 -->
+      <div class="col-md-6">
+        <div class="card h-100">
+          <img
+            src="WhatsApp Image 2025-06-19 at 22.48.24 (1).jpeg"
+            alt="Prestasi Futsal dan Catur"
+            class="card-img-top pengalaman-img"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Prestasi  Non-Akademik</h5>
+            <ul>
+              <li>Juara 3 Blind Cup Futsal (2024)</li>
+              <li>Juara 1 Class Meeting Futsal (2022)</li>
+              <li>Juara 2 Antar Lingkungan Futsal (2023)</li>
+              <li>Juara 2 Lomba Catur tingkat SD</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kartu Pengalaman 2 -->
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Pengalaman Organisasi</h5>
+            <p>
+              Mengikuti kegiatan <strong>Bina Akrab</strong>, yaitu kegiatan pembinaan dan keakraban bagi mahasiswa baru di lingkungan kampus. Kegiatan ini bertujuan membangun solidaritas, kerja sama, dan kepemimpinan sejak awal masa perkuliahan.
+            </p>
+            <p>
+              Melalui Bina Akrab, saya belajar membangun relasi, meningkatkan rasa percaya diri, dan mengenal lebih dekat kehidupan kampus serta organisasi kemahasiswaan.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Artikel -->
+    <section id="artikel">
+      <div class="container text-center" data-aos="fade-down">
+        <h2 class="mb-4">Artikel Teknologi Populer</h2>
+        <p>Update wawasanmu tentang teknologi, AI, dan pemrograman modern</p>
+      </div>
+
+      <div class="container pb-5">
+        <div class="row g-4">
+          <!-- Artikel 1 -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="WhatsApp Image 2025-06-17 at 03.37.52.jpeg"
+                class="card-img-top"
+                alt="Kelas Coding"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  1. The Top Coding Classes Every Parent Should Know About
+                </h5>
+                <p class="card-text">
+                  Ringkasan: Memberikan panduan lengkap berbagai kelas coding
+                  anak—dari Bahasa blok seperti Scratch, hingga game development
+                  dan robotika. Artikel ini membantu orang tua memahami cara
+                  memilih kelas yang sesuai tingkat usia dan minat anak . Kenapa
+                  menarik: Fokus pada pilihan praktis dan edukatif; cocok
+                  sebagai referensi awal.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Artikel 2 -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card">
+              <img
+                src="WhatsApp Image 2025-06-17 at 03.47.54.jpeg"
+                class="card-img-top"
+                alt="Manfaat Belajar Coding"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  2. 5 Reasons Kids Should Learn to Code
+                </h5>
+                <p class="card-text">
+                  Ringkasan: Khusus untuk anak usia sekitar 8 tahun. Menekankan
+                  penggunaan pemrograman blok (seperti Scratch), pembelajaran
+                  berbasis proyek, serta rekomendasi platform seperti CodaKid .
+                  Kenapa menarik: Sangat sesuai untuk anak kecil, dengan metode
+                  yang menyenangkan dan dialogis.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Artikel 3 -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="card">
+              <img
+                src="WhatsApp Image 2025-06-17 at 03.53.38.jpeg"
+                class="card-img-top"
+                alt="Panduan Coding Anak"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  3. Coding for 8‑Year‑Olds: The Ultimate Guide
+                </h5>
+                <p class="card-text">
+                  Fokus pada pembelajaran menyenangkan bagi anak-anak usia 8
+                  tahun dengan Scratch dan metode interaktif.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- Sertifikat -->
+<section id="sertifikat" class="section-bg">
+  <div class="container text-center" data-aos="fade-up">
+    <h2 class="mb-4">Sertifikat</h2>
+    <img
+      src="WhatsApp Image 2025-06-13 at 00.51.59.jpeg"
+      class="sertifikat-img"
+      alt="Sertifikat Teknologi"
+    />
+  </div>
+</section>
+
+     <!-- Kontak Section -->
+<section id="kontak" class="section-bg">
+  <div class="container">
+    <div class="section-header text-center mb-5" data-aos="fade-down">
+      <h2>Kontak Saya</h2>
+      <p>Silakan hubungi saya melalui formulir berikut</p>
+    </div>
+    <div class="row justify-content-center align-items-start">
+      <!-- Form Kontak -->
+      <div class="col-md-6 mb-4" data-aos="fade-right">
+        <form action="" method="post">
+          <div class="mb-3">
+            <label for="nama" class="form-label">Nama Lengkap</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nama"
+              placeholder="Masukkan nama Anda"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Aktif</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Masukkan email Anda"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="pesan" class="form-label">Pesan</label>
+            <textarea
+              class="form-control"
+              id="pesan"
+              rows="4"
+              placeholder="Tulis pesan Anda..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-success w-100">Kirim Pesan</button>
+        </form>
+      </div>
+
+      <!-- Media Sosial -->
+      <div class="col-md-6" data-aos="fade-left">
+        <h4 class="mb-3">Sosial Media</h4>
+        <p>
+          Instagram:
+          <a href="https://instagram.com/artovelludu" target="_blank">@artovelludu</a><br />
+          WhatsApp Web:
+          <a href="https://web.whatsapp.com/send?phone=6281241051021" target="_blank">Chat via WhatsApp</a><br />
+          WhatsApp Mobile:
+          <a href="https://wa.me/6281241051021" target="_blank">Hubungi via WhatsApp</a><br />
+          TikTok:
+          <a href="https://www.tiktok.com/@artovelludu" target="_blank">@artovelludu</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- <div class="col-md-6 mt-4 mt-md-0" data-aos="fade-left">
+          <h1>Sosial Media</h1>
+         
+            Instagram: <a href="https://instagram.com/artovelludu" target="_blank">@artovelludu</a><br />
+            WhatsApp Web:
+            <a href="https://web.whatsapp.com/send?phone=6281241051021" target="_blank">Chat via WhatsApp</a><br />
+            WhatsApp Mobile:
+            <a href="https://wa.me/6281241051021" target="_blank">Hubungi via WhatsApp</a><p></p>
+            <strong>TikTok:</strong>
+      <a href="https://www.tiktok.com/@artovelludu" target="_blank">@artovelludu</a>
+        </div>
+        </div> -->
+      
+
+      <!-- <a href="achievement.html" class="btn-utama mt-3">Lebih Lanjut</a> -->
+    </div>
+    <!-- Galeri -->
+    <section id="galeri" class="section-bg">
+      <div class="container" data-aos="fade-up">
+        <h2 class="text-center mb-4">Galeri</h2>
+        <div class="row g-4">
+          <!-- Galeri Images -->
+          <div class="col-md-6 col-lg-4">
+            <img
+              src="WhatsApp Image 2025-06-12 at 23.05.25.jpeg"
+              alt="Galeri 1"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <img
+              src="WhatsApp Image 2025-06-17 at 00.54.53.jpeg"
+              alt="Galeri 2"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <img
+              src="WhatsApp Image 2025-06-17 at 00.54.56.jpeg"
+              alt="Galeri 3"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <img
+              src="WhatsApp Image 2025-06-17 at 02.00.57.jpeg"
+              alt="Galeri 4"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <img
+              src="WhatsApp Image 2025-06-17 at 01.02.16.jpeg"
+              alt="Galeri 5"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <img
+              src="WhatsApp Image 2025-06-17 at 00.54.54.jpeg"
+              alt="Galeri 6"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Lann Ludu | Enjoy your life</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
